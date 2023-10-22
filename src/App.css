@@ -8,7 +8,6 @@
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "search" "main" "footer";
   min-height: 100vh;
 }
@@ -22,21 +21,20 @@ header {
   color: whitesmoke;
   padding: 15px;
   font-weight: 700;
+  height: 40px;
 }
 .header-icon {
   padding-right: 5px;
 }
 .loading {
   font-size: 4em;
-  display: flex;
-  justify-content: center;
-  align-content: start;
-  align-items: center;
+
 }
 .search {
   display: flex;
   grid-area: search;
   justify-content: center;
+  align-content: center;
   align-items: center;
   height: 40px;
   gap: 10px;
@@ -45,11 +43,9 @@ header {
   width: 300px;
 }
 main {
-  width: 100%;
   grid-area: main;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 

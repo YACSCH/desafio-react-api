@@ -9,7 +9,7 @@ const regiones = {
     8: 'Libertador General B. O.',
     9: 'Maule',
     10: 'BioBio',
-    11: '',
+    11: 'Araucania',
     12: 'Los Rios',
     13: 'Los Lagos',
     14: 'Aysen',

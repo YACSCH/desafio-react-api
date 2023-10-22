@@ -35,7 +35,8 @@ function App() {
             isLoading={isLoading}/>
 
         <Footer/>
-    </div>)
+    </div>
+    )
 }
 
 export default App;
