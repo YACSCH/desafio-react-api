@@ -33,7 +33,6 @@ function App() {
         <Main data={data}
             originalData={originalData}
             isLoading={isLoading}/>
-
         <Footer/>
     </div>
     )
