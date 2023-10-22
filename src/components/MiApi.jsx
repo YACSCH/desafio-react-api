@@ -22,9 +22,6 @@ const Main = ({ data, isLoading }) => {
       ) : (
         <>
           {data ? (
-
-            
-
             data.map((item) => (
               <article className="card" key={item.local_id}>
                 <h2 className="card-title">{item.local_nombre}</h2>

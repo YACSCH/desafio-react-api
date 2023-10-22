@@ -20,53 +20,36 @@ header {
   align-items: center;
   background-color: #29353b;
   color: whitesmoke;
-  padding: 10px;
+  padding: 15px;
   font-weight: 700;
 }
 .header-icon {
   padding-right: 5px;
 }
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-.nav-item {
-  text-decoration: none;
-  padding: 10px;
-  color: whitesmoke;
-}
-.nav-item:hover {
-  color: orange;
-  box-shadow: 0, 0, 0, 0, 25px black;
-}
-.mapa {
-  width: 100%;
-  margin: 10px;
-  border-radius: 2%;
-}
 .loading {
-  font-size: 50px;
-  justify-items: center;
-  align-content: center;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-content: start;
+  align-items: center;
 }
 .search {
   display: flex;
   grid-area: search;
   justify-content: center;
-  align-Items: center; 
-  height: 40px;   
-  gap:10px
+  align-items: center;
+  height: 40px;
+  gap: 10px;
 }
 .search-input {
-    width: 300px; 
+  width: 300px;
 }
 main {
   width: 100%;
   grid-area: main;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -105,8 +88,6 @@ footer {
   background-color: #29353b;
   color: azure;
   padding: 10px;
- 
- 
 }
 .footer-list {
   list-style-type: none;
@@ -124,6 +105,4 @@ footer {
   header {
     flex-direction: row;
   }
-
-  
 }

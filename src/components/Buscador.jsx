@@ -24,15 +24,16 @@ const Buscador = ({ setData, originalData }) => {
   };
 
   return (
-    <div className="search">
-     <label for="txtsearch">Busqueda :</label>  
+    <div className='search'>
+     <label htmlFor='txtsearch'>Busqueda :</label>  
       <input
-        type="text"
-        name="txtsearch"
-        placeholder="ingrese criterio de busqueda"
+        type='text'
+        name='txtsearch'
+        id='txtsearch'
+        placeholder='ingrese criterio de busqueda'
         value={busqueda}
         onChange={handleBusqueda}
-        className="search-input"
+        className='search-input'
       />
     </div>
   );
