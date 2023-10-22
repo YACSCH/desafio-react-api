@@ -5,11 +5,11 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.contenedor {
+.container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header" "search" "main" "footer";
   min-height: 100vh;
 }
 header {
@@ -48,10 +48,12 @@ nav {
 }
 .loading {
   font-size: 50px;
+  justify-items: center;
   align-content: center;
 }
 .search {
   display: flex;
+  grid-area: search;
   justify-content: center;
   align-Items: center; 
   height: 40px;   
@@ -103,6 +105,8 @@ footer {
   background-color: #29353b;
   color: azure;
   padding: 10px;
+ 
+ 
 }
 .footer-list {
   list-style-type: none;

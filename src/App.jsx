@@ -23,7 +23,9 @@ function App() {
         farmacias();
     }, []);
 
-    return (<>
+    return (
+      <div className='container'>
+
         <Header/>
         <Buscador data={data}
             setData={setData}
@@ -33,7 +35,7 @@ function App() {
             isLoading={isLoading}/>
 
         <Footer/>
-    </>);
+    </div>)
 }
 
 export default App;
