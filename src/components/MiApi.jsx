@@ -22,8 +22,8 @@ const Main = ({ data, isLoading }) => {
       ) : (
         <>
           {data ? (
-            data.map((item) => (
-              <article className="card" key={item.local_id}>
+            data.map((item,index) => (
+              <article className="card" key={index}>
                 <h2 className="card-title">{item.local_nombre}</h2>
                 <MapContainer
                   center={[item.local_lat, item.local_lng]}
@@ -38,7 +38,7 @@ const Main = ({ data, isLoading }) => {
                   <Marker
                     position={[item.local_lat, item.local_lng]}
                     icon={iconUbicacion}
-                    key={item.local_id}
+                    key={index}
                   >
                     <Popup>
                       Horario Atencion : {item.funcionamiento_hora_apertura} -{" "}
